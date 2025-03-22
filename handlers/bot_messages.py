@@ -11,7 +11,7 @@ router = Router()
 
 
 
-@router.message(F.text.lower().in_(["хай", "хелоу", "привет", "салам", 'hello', 'how are you?', 'salam', 'кандай','Кандай', 'hi']))
+@router.message(F.text.lower().in_(["хай", "хелоу", "привет", "салам", 'hello', 'how are you?', 'salam', 'кандай','Кандай', 'hi', 'how are you?']))
 async def greetings(message: Message):
     
     await message.reply('Salam')
